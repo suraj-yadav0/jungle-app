@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         // This is the theme of your application.
         //
   
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      //  colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
       home: const HomeScreen(),
