@@ -107,7 +107,7 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                // Logo and Illustration
+
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -116,7 +116,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Image.asset(
-                              'assets/manpng.png'), // Replace with your illustration
+                              'assets/manpng.png'), 
                         ),
                       ),
                     ],
