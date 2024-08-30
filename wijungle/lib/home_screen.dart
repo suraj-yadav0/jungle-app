@@ -12,6 +12,16 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title:
+           Image.asset(
+              "assets/logi.png",
+              fit: BoxFit.contain,
+             
+            ),
+          
+        ),
+      
       body: Center(
         child: SingleChildScrollView(
           padding: const EdgeInsets.all(16.0),
@@ -26,13 +36,14 @@ class _HomeScreenState extends State<HomeScreen> {
                     Expanded(
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
-                        child: Image.asset('wijungle/assets/manpng.png'), // Replace with your illustration
+                        child: Image.asset(
+                            'assets/manpng.png'), // Replace with your illustration
                       ),
                     ),
                   ],
-                const  Expanded(
+                  const Expanded(
                     child: Padding(
-                      padding:  EdgeInsets.all(8.0),
+                      padding: EdgeInsets.all(8.0),
                       child: LoginForm(),
                     ),
                   ),
@@ -65,7 +76,7 @@ class LoginForm extends StatelessWidget {
         ],
       ),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Text(
             "Let's Secure Your PC",
@@ -75,22 +86,22 @@ class LoginForm extends StatelessWidget {
               color: Colors.black87,
             ),
           ),
-        const  SizedBox(height: 20),
-         const TextField(
+          const SizedBox(height: 20),
+          const TextField(
             decoration: InputDecoration(
               labelText: 'Username',
               border: OutlineInputBorder(),
             ),
           ),
-        const  SizedBox(height: 20),
-        const  TextField(
+          const SizedBox(height: 20),
+          const TextField(
             decoration: InputDecoration(
               labelText: 'Password',
               border: OutlineInputBorder(),
             ),
             obscureText: true,
           ),
-       const   SizedBox(height: 20),
+          const SizedBox(height: 20),
           Row(
             children: [
               Checkbox(
@@ -105,17 +116,18 @@ class LoginForm extends StatelessWidget {
               ),
             ],
           ),
-       const   SizedBox(height: 20),
+          const SizedBox(height: 20),
           ElevatedButton(
             onPressed: () {
               // Implement login functionality
             },
             style: ElevatedButton.styleFrom(
-              minimumSize: const Size(double.infinity, 50), backgroundColor: Colors.blue[900],
+              minimumSize: const Size(double.infinity, 50),
+              backgroundColor: const Color.fromARGB(255, 45, 13, 161),
             ),
             child: Text(
               'Log In',
-              style: GoogleFonts.poppins(fontSize: 18),
+              style: GoogleFonts.poppins(fontSize: 18,color: Colors.white),
             ),
           ),
         ],
