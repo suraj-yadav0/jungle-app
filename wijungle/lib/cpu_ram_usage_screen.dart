@@ -19,14 +19,14 @@ class _CpuRamUsageScreenState extends State<CpuRamUsageScreen> {
   @override
   void initState() {
     super.initState();
-    Timer.periodic(Duration(seconds: 5), (timer) {
+    Timer.periodic(const Duration(seconds: 5), (timer) {
       _fetchCpuRamData();
     });
   }
 
   Future<void> _fetchCpuRamData() async {
     try {
-      // Replace this with actual data fetching from C++ service
+     // Here the data will be replaced after feteching 
       final cpuUsage = await _mockFetchCpuUsage();
       final ramUsage = await _mockFetchRamUsage();
 
@@ -77,7 +77,7 @@ class _CpuRamUsageScreenState extends State<CpuRamUsageScreen> {
   Widget _buildSideBar() {
     return Container(
       width: 150,
-      color: Color(0xFF2C3E50),
+      color: const Color(0xFF2C3E50),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
