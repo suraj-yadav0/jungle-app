@@ -5,7 +5,10 @@ import 'package:flutter/material.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 
 class CpuRamUsageScreen extends StatefulWidget {
+  const CpuRamUsageScreen({super.key});
+
   @override
+  // ignore: library_private_types_in_public_api
   _CpuRamUsageScreenState createState() => _CpuRamUsageScreenState();
 }
 
