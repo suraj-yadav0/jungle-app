@@ -30,9 +30,9 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ),
                   ],
-                  Expanded(
+                const  Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding:  EdgeInsets.all(8.0),
                       child: LoginForm(),
                     ),
                   ),
@@ -90,7 +90,7 @@ class LoginForm extends StatelessWidget {
             ),
             obscureText: true,
           ),
-          SizedBox(height: 20),
+       const   SizedBox(height: 20),
           Row(
             children: [
               Checkbox(
@@ -105,13 +105,13 @@ class LoginForm extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(height: 20),
+       const   SizedBox(height: 20),
           ElevatedButton(
             onPressed: () {
               // Implement login functionality
             },
             style: ElevatedButton.styleFrom(
-              minimumSize: Size(double.infinity, 50), backgroundColor: Colors.blue[900],
+              minimumSize: const Size(double.infinity, 50), backgroundColor: Colors.blue[900],
             ),
             child: Text(
               'Log In',
