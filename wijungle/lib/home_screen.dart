@@ -26,7 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     Expanded(
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
-                        child: Image.asset('assets/logo_illustration.png'), // Replace with your illustration
+                        child: Image.asset('wijungle/assets/logi.png'), // Replace with your illustration
                       ),
                     ),
                   ],
