@@ -87,23 +87,23 @@ class _CpuRamUsageScreenState extends State<CpuRamUsageScreen> {
           ),
         const  SizedBox(height: 20),
           ListTile(
-            leading: Icon(Icons.analytics, color: Colors.white),
-            title: Text(
+            leading: const Icon(Icons.analytics, color: Colors.white),
+            title: const Text(
               'Analytics',
               style: TextStyle(color: Colors.white),
             ),
             onTap: () {},
           ),
-          Spacer(),
+        const  Spacer(),
           ListTile(
-            leading: Icon(Icons.feedback, color: Colors.white),
-            title: Text(
+            leading: const Icon(Icons.feedback, color: Colors.white),
+            title: const Text(
               'Feedback',
               style: TextStyle(color: Colors.white),
             ),
             onTap: () {},
           ),
-          SizedBox(height: 20),
+        const  SizedBox(height: 20),
         ],
       ),
     );
@@ -117,7 +117,7 @@ class _CpuRamUsageScreenState extends State<CpuRamUsageScreen> {
       percent: usage,
       center: Text(
         "${(usage * 100).toStringAsFixed(0)}%\n$label",
-        style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+        style: const TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
         textAlign: TextAlign.center,
       ),
       circularStrokeCap: CircularStrokeCap.round,
