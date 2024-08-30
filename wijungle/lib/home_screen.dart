@@ -14,7 +14,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       body: Center(
         child: SingleChildScrollView(
-          padding: EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(16.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -47,14 +47,16 @@ class _HomeScreenState extends State<HomeScreen> {
 }
 
 class LoginForm extends StatelessWidget {
+  const LoginForm({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(16.0),
+      padding: const EdgeInsets.all(16.0),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(10.0),
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
             color: Colors.black26,
             blurRadius: 10,
@@ -73,15 +75,15 @@ class LoginForm extends StatelessWidget {
               color: Colors.black87,
             ),
           ),
-          SizedBox(height: 20),
-          TextField(
+        const  SizedBox(height: 20),
+         const TextField(
             decoration: InputDecoration(
               labelText: 'Username',
               border: OutlineInputBorder(),
             ),
           ),
-          SizedBox(height: 20),
-          TextField(
+        const  SizedBox(height: 20),
+        const  TextField(
             decoration: InputDecoration(
               labelText: 'Password',
               border: OutlineInputBorder(),
