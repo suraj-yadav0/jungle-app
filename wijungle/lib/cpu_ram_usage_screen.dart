@@ -85,7 +85,7 @@ class _CpuRamUsageScreenState extends State<CpuRamUsageScreen> {
             padding: const EdgeInsets.all(8.0),
             child: Image.asset('assets/wijungle_logo.png'),
           ),
-          SizedBox(height: 20),
+        const  SizedBox(height: 20),
           ListTile(
             leading: Icon(Icons.analytics, color: Colors.white),
             title: Text(
